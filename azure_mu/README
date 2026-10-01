@@ -1,0 +1,75 @@
+
+# 💚 MumWise — Financial Independence for Busy Mums
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)](https://flutter.dev)
+[![RevenueCat](https://img.shields.io/badge/RevenueCat-In--App%20Purchases-E75243)](https://www.revenuecat.com)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Live-brightgreen)](https://play.google.com/store/apps/details?id=com.mumwise.app)
+
+> **Official Store Listing**: [Download on Google Play](https://play.google.com/store/apps/details?id=com.mumwise.app)  
+> **Built for RevenueCat Shipaton 2026** | Targeting: **RevenueCat Peace Prize**, **Influencer Award — Abbey’s Kitchen**, & **HAMM Award**
+
+---
+
+## 📌 Overview
+Mothers carry the vast majority of unpaid household labor, managing family budgets, meal preparation, and cost calculations under constant time pressure. **MumWise** provides compassionate, practical financial and grocery budgeting tools without restrictive spreadsheets or food guilt.
+
+---
+
+## 🚀 Key Features
+* **Smart Grocery Swaps**: Upload or describe name-brand products to discover affordable, high-quality alternatives.
+* **Batch Cooking Calculator**: Calculate true cost-per-serving across family recipes to slash grocery bills and eliminate food waste.
+* **Renovation Savings Guide**: Clear breakdowns comparing DIY vs. professional contractor costs.
+* **Beginner Investment Guide**: Accessible, zero-jargon asset allocation tailored to user risk tolerance.
+* **RevenueCat Monetization**: Auto-renewing Pro/Premium subscriptions and universal credit packs.
+
+---
+
+## 💳 Judge Reviewer Credentials & Promo Codes
+* **Reviewer Account**: `reviewer@mumwise.app` / `Reviewer123!`
+* **Google Play / RevenueCat Promo Codes**:
+  * 👑 **Premium Subscription**: `MUMWISEFREE`
+  * ⚡ **25 Universal Credit Pack**: `XPQH6SCUPH1R26CSVLBTKW3`
+  * ⚡ **10 Universal Credit Pack**: `WN7EPDN3P8HDH6LK76A877F`
+
+---
+
+## 🛠 Tech Stack & Architecture
+* **Frontend**: Flutter / Dart with custom tab views, `fl_chart`, and `image_picker`
+* **Monetization Engine**: RevenueCat SDK (`purchases_flutter`)
+* **Backend API**: Python REST API on Azure Web Apps (`https://mum-hdfvdudvdgaydvdg.eastus-01.azurewebsites.net`)
+* **Vision & NLP**: Multi-modal Gemini analysis endpoints
+
+---
+
+## 📂 Project Structure
+```text
+mumwise/
+├── android/               # Native Android configuration
+├── ios/                   # Native iOS configuration
+├── lib/
+│   ├── main.dart          # App entry, state management, RevenueCat configure
+│   ├── models/            # UserSession, ExpenseEntry, FinancialGoal
+│   ├── services/          # ApiService (Shopping swaps, batch cooking, Azure endpoints)
+│   └── screens/           # HomeScreen, MoneySaversScreen, InvestmentScreen, AIAssistantScreen, UpgradeScreen
+├── azure_mu/              # Azure backend infrastructure
+│   ├── app.py             # REST endpoints
+│   ├── users.db           # SQLite database
+│   └── requirements.txt   # Python dependencies
+└── pubspec.yaml           # Flutter dependencies
+```
+
+---
+
+## ⚙️ Getting Started
+```bash
+git clone https://github.com/Jerryblessed/mumwise.git
+cd mumwise
+flutter pub get
+flutter run
+```
+
+---
+
+## 📄 License
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
